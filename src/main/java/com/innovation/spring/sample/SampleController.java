@@ -8,6 +8,6 @@ public class SampleController {
 
     @GetMapping("/sample")
     public String sample() {
-        return "Hello World World World!";
+        return "Hello GithubActions!";
     }
 }
