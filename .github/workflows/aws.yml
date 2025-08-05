@@ -31,13 +31,13 @@ on:
     branches: [ "main" ]
 
 env:                                          # == gitLab variables
-  AWS_REGION: ap-northeast-2                  # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: group-15190932/test-01         # set this to your Amazon ECR repository name
-  ECS_SERVICE: project-01-service                 # set this to your Amazon ECS service name
-  ECS_CLUSTER: project-cluster                # set this to your Amazon ECS cluster name
+  AWS_REGION: ap-northeast-2                  # AWS region
+  ECR_REPOSITORY: group-15190932/project-01         # AWS ECR name
+  ECS_SERVICE: project-01-service                 # AWS ECS service
+  ECS_CLUSTER: project-cluster                # AWS ECS cluster
   ECS_TASK_DEFINITION: .github/workflows/project-01-task-revision1.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: project-01-container           # set this to the name of the container in the
+  CONTAINER_NAME: project-01-container           # AWS ECS cluster-service-container
                                                # containerDefinitions section of your task definition
 
 permissions:
